@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .main1 h1{
+            margin: 0PX;
+            top: 50%;
+            left: 50%;
+            color: azure;
+            font-size: x-large;
+
+        }
+        .main1{
+            width: 100vw;
+            height: 10vh;
+            background-color: darkblue;
+            position: relative;
+        }
+        .main11{
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            color: azure;
+            font-size: xx-large;
+            transform: translate(-50%,-50%);
+
+        }
+        .main2{
+            width: 100vw;
+            height: 80vh;
+            position: relative;
+        }
+        .main21{
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            color: azure;
+        }
+        .main22{
+            position: absolute;
+            left: 100px;
+            top: 300px;
+        }
+        .main22 button{
+            width: 100px;
+            height: 30px;
+            font-size: large;
+        }
+        .main23{
+              position: absolute;
+              right: 300px;
+              top: 100px;
+        }
+        .main23 img{
+            height: 350px;
+            width: 300px;
+            border-radius: 100px;
+        }
+        .main24{
+            position: absolute;
+            right: 330px;
+            top: 200px;
+            color: azure;
+            display: none;
+        }
+        #im1{
+           width: 100%;
+           height: 100%; 
+        }
+        .main3{
+            width: 100vw;
+            height: 10vh;
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="main1">
+        <div class="main11">
+            <h1>Sulthana Banu</h1>
+    </div>
+    </div>
+    <div class="main2">
+           <img src="bac2.jpg" alt="image" id="im1">
+        <div class="main21">
+              <h1 id="h1">Hi there,</h1>
+              <h1 id="h2">This is Sulthana</h1>
+              <h1 id="h3">Software Developer</h1>
+            </div>
+            <div class="main22">
+                <button id="b"><b>About</b></button>
+
+            </div>
+            <div class="main23" id="visible">
+                <img src="ava2.jpg" alt="image">
+            </div>
+            <div class="main24" id="hidden">
+                <h3>This is hidden</h3>
+                <h3>Appear only when event occurs</h3>
+
+            </div>
+        </div>
+    <div class="main3"></div>
+    <script>
+           document.getElementById('b').onclick = function(){
+              document.getElementById('h1').innerHTML="Junior Developer";
+              document.getElementById('h2').innerHTML="Intern in Novi tech";
+              document.getElementById('h3').innerHTML="BCA Graduate";
+              document.getElementById('visible').style.display='none';
+              document.getElementById('hidden').style.display='block';
+           }
+    </script>
+</body>
+</html>
