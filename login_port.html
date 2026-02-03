@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: aquamarine;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .main{
+            max-width: 1000px;
+            margin: auto;
+        }
+        h1{
+            font-size: 50px;
+            word-break: break-all;
+        }
+        .row{
+            margin: 8px -16px;
+        }
+        .row, .row > .colums{
+            padding: 8px;
+        }
+        .colums{
+            float: left;
+            width: 25%;
+        }
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .content{
+            background-color: azure;
+            padding: 10px;
+            
+        }
+        @media screen and (max-width: 900px){
+            .colums{
+                width: 50px;
+            }
+        }
+         @media screen and (max-width: 600px){
+            .colums{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>MYLOGIN.COM</h1>
+        <hr>
+        <h2>Portfolio</h2>
+        <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem a id minima minus itaquebr
+           reprehenderit. Provident nisi placeat ipsum sunt rerum fuga et quod deleniti labore. Aut officiis consequatur dolore!</P>
+        <div class="row">
+            <div class="colums">
+                <div class="content">
+                    <img src="natu1.jpg" alt="nature" style="width: 100%;">
+                    <h3>My work</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eum magni ex fugiat, ullam cupiditate earum voluptate animi iure ea libero illum laboriosam autem quae. Libero, iure minima. Id, vel?</p>
+            </div>
+            </div>
+            <div class="colums">
+                <div class="content">
+                    <img src="natu2.jpg" alt="nature" style="width: 100%;">
+                    <h3>My work</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eum magni ex fugiat, ullam cupiditate earum voluptate animi iure ea libero illum laboriosam autem quae. Libero, iure minima. Id, vel?</p>
+            </div>
+            </div>
+            <div class="colums">
+                <div class="content">
+                    <img src="natu3.jpg" alt="nature" style="width: 100%;">
+                    <h3>My work</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eum magni ex fugiat, ullam cupiditate earum voluptate animi iure ea libero illum laboriosam autem quae. Libero, iure minima. Id, vel?</p>
+            </div>
+            </div>
+            <div class="colums">
+                <div class="content">
+                    <img src="natu4.jpg" alt="nature" style="width: 100%;">
+                    <h3>My work</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eum magni ex fugiat, ullam cupiditate earum voluptate animi iure ea libero illum laboriosam autem quae. Libero, iure minima. Id, vel?</p>
+            </div>
+            </div>
+        
+        </div>   
+        <div class="content">
+            <img src="lion.jpg" alt="lionimage" style="width: 100%;">
+            <h3>Some other work</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum debitis eos obcaecati dolores magni odit sapiente accusantium, dicta earum ducimus commodi quisquam excepturi ipsam consectetur expedita corrupti necessitatibus tempore distinctio?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolores fuga voluptates, porro sed in, consequatur nostrum incidunt nemo non error ullam itaque consequuntur ducimus officiis sint! Labore, illum dolorum?</p>
+         </div>
+
+        </div>
+</body>
+</html>
